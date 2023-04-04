@@ -1,0 +1,109 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_right = 263.0
+margin_bottom = 103.0
+text = "press me"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 13.0
+margin_top = 125.0
+margin_right = 119.0
+margin_bottom = 310.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_right = 106.0
+margin_bottom = 19.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "Latitude"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 23.0
+margin_right = 106.0
+margin_bottom = 42.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "longitude"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 46.0
+margin_right = 106.0
+margin_bottom = 65.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "accuracy"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 69.0
+margin_right = 106.0
+margin_bottom = 88.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "altitude"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 92.0
+margin_right = 106.0
+margin_bottom = 111.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "speed"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 115.0
+margin_right = 106.0
+margin_bottom = 134.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "Time"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 125.0
+margin_right = 226.0
+margin_bottom = 310.0
+
+[node name="Latitude" type="RichTextLabel" parent="VBoxContainer2"]
+margin_right = 106.0
+margin_bottom = 19.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "Latitude"
+
+[node name="Longitude" type="RichTextLabel" parent="VBoxContainer2"]
+margin_top = 23.0
+margin_right = 106.0
+margin_bottom = 42.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "longitude"
+
+[node name="Accuracy" type="RichTextLabel" parent="VBoxContainer2"]
+margin_top = 46.0
+margin_right = 106.0
+margin_bottom = 65.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "accuracy"
+
+[node name="altitude" type="RichTextLabel" parent="VBoxContainer2"]
+margin_top = 69.0
+margin_right = 106.0
+margin_bottom = 88.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "altitude"
+
+[node name="speed" type="RichTextLabel" parent="VBoxContainer2"]
+margin_top = 92.0
+margin_right = 106.0
+margin_bottom = 111.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "speed"
+
+[node name="time" type="RichTextLabel" parent="VBoxContainer2"]
+margin_top = 115.0
+margin_right = 106.0
+margin_bottom = 134.428
+rect_min_size = Vector2( 0, 19.428 )
+text = "Time"
+
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
